@@ -1,23 +1,23 @@
 format: jb-book
 root: about/unsyllabus
 parts:
-- caption: About this course
+- caption: 关于该课程
   chapters:
   - file: about/syllabus
   - file: about/course_schedule
   - file: about/accommodations
   - file: about/doing_well
   - file: about/faq
-- caption: Demo section
+- caption: Demo 部分
   chapters:
   - file: class/demo01/demo01_summary
-    title: Demo 1 - Data Science
+    title: Demo 1 - 数据科学
     sections:
       - file: class/demo01/lecture1
       - file: class/demo01/lecture2
       - file: class/demo01/lecture3
   - file: class/demo02/demo02_summary
-    title: Demo 2 - Introductory Physics
+    title: Demo 2 - 核物理
     sections:
       - file: class/demo02/videos
       - file: class/demo02/homework
