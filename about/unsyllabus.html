@@ -28,9 +28,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pdf_print.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom_layouts.css" />
     <link rel="stylesheet" type="text/css" href="../_static/extra.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pdf_print.css" />
     <link media="all" rel="stylesheet" type="text/css" href="https://dokie.li/media/css/dokieli.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
@@ -41,9 +41,12 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/save_state.js"></script>
     <script async="async" kind="dokieli" src="https://dokie.li/scripts/dokieli.js"></script>
     <script kind="utterances">
@@ -82,12 +85,11 @@ commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe,.cell"
-        const thebe_selector_input = "pre,.cell_input div.highlight"
-        const thebe_selector_output = ".output,.cell_output"
-    </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="canonical" href="https://firasm.github.io/jupyterbook_course_template/about/unsyllabus.html" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -1797,7 +1799,7 @@ Here are the key principles I intend to apply in this class:</p>
 <p>This course will be taught as a <a class="reference external" href="https://en.wikipedia.org/wiki/Blended_learning">Blended Learning classroom</a> where some elements of a <a class="reference external" href="https://www.youtube-nocookie.com/embed/BCIxikOq73Q">flipped classroom</a> will be mixed with a more traditional coding classroom with live demos, clicker questions, and worksheets.
 Briefly, this requires students to watch videos and engage with the assigned reading prior to the classroom meeting (knowledge transfer).
 During the class meeting, the instructor guides students through clicker questions, worksheet problems, and other activities to help the students make sense of the material (sense-making).
-See <a class="reference internal" href="#masterymodel1"><span class="std std-numref">Fig. 1</span></a> for a mental model of how learning works <span id="id1">[<a class="reference internal" href="#id4">Ambrose <em>et al.</em>, 2010</a>]</span>.</p>
+See <a class="reference internal" href="#masterymodel1"><span class="std std-numref">Fig. 1</span></a> for a mental model of how learning works <span id="id1">[<a class="reference internal" href="#id4" title="Susan A. Ambrose, Michael W. Bridges, Michele DiPietro, Marsha C. Lovett, and Marie K. Norman. How Learning Works: 7 Research-Based Principles for Smart Teaching. Jossey-Bass, San Francisco, CA, 2010. ISBN 978-0-470-48410-4.">Ambrose <em>et al.</em>, 2010</a>]</span>.</p>
 <div class="figure align-default" id="masterymodel1">
 <a class="reference internal image-reference" href="../_images/masterymodel1.png"><img alt="../_images/masterymodel1.png" src="../_images/masterymodel1.png" style="width: 750px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">To develop mastery in a concept, students must first acquire the necessary skills, then practice integrating them, and finally know when to apply what they have learned. This figure was adapted from Figure 4.1 of the book “How Learning Works”.
@@ -1978,12 +1980,13 @@ Below is the list of resources I have used to put this syllabus together:</p>
 </div>
 <div class="section" id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p id="id2"><dl class="citation">
+<div class="docutils container" id="id2">
+<dl class="citation">
 <dt class="label" id="id4"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
 <dd><p>Susan A. Ambrose, Michael W. Bridges, Michele DiPietro, Marsha C. Lovett, and Marie K. Norman. <em>How Learning Works: 7 Research-Based Principles for Smart Teaching</em>. Jossey-Bass, San Francisco, CA, 2010. ISBN 978-0-470-48410-4.</p>
 </dd>
 </dl>
-</p>
+</div>
 </div>
 <div class="toctree-wrapper compound">
 </div>
